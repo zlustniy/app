@@ -1,4 +1,13 @@
-LiabilityAccountingSystem 
+Liability Accounting System (LAS)
 ===========
 
 Сервис для учета суммарного объема финансовых обязательств, взятых на себя клиентами к текущему моменту времени. 
+
+## Управление зависимостями python
+
+В проекте используется python 3.9.7. Для управления зависимостями используется [Poetry](https://python-poetry.org).
+
+Установка зависимостей:
+```shell
+$ poetry install --no-root
+```

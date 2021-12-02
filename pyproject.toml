@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "las"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[[tool.poetry.source]]
+name = "default"
+url = "https://pypi.org/simple"
+default = true
+
+[[tool.poetry.source]]
+name = "srvhub"
+url = "http://pypi.srvhub.tools/simple"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^3.2.8"
+requests = "^2.26.0"
+psycopg2 = "^2.9.1"
+djangorestframework = "^3.12.4"
+djangorestframework-simplejwt = "^4.8.0"
+django-environ = "^0.7.0"
+appversion = { version = "^0.1.4", source = "srvhub" }
+sentry-sdk = "^1.4.3"
+django-redis = "^5.0.0"
+pymemcache = "^3.5.0"
+drf-yasg = { version = "^1.20.0", extras = ["validation"] }
+python-redis-lock = "^3.7.0"
+factory-boy = "^3.2.0"
+mock = "^4.0.3"
+dj-model-utils = { version = "^0.1.0", source = "srvhub" }
+pyjwt = "2.1.0"
+coverage = "^6.0.2"
+pytest = "^6.2.5"
+jsonschema = "<4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

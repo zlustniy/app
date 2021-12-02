@@ -1,0 +1,13 @@
+.idea
+venv
+.env
+docker-compose-dev.yml
+src/las/settings/local.py
+src/logs/*.log
+src/media/*
+!src/media/.empty
+.vscode
+helm/charts
+helm/Chart.lock
+helm/**/*.yaml.dec
+/coverage_reports/coverage.xml
